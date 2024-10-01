@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dd7qpjderptqp"]
+
+[ext_resource type="Script" path="res://Game Jam/Assets/Player/player.gd" id="1_kidcs"]
+[ext_resource type="Texture2D" uid="uid://i8hv2alooy0r" path="res://icon.svg" id="2_tgqo2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v5cr6"]
+size = Vector2(64, 64)
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(32, 32)
+script = ExtResource("1_kidcs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_tgqo2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_v5cr6")
