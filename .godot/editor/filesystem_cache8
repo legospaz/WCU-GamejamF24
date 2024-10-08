@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1727813294
+::res://::1728416892
 bg.png::CompressedTexture2D::8839508800222635015::1727813211::1727813294::1::::<><>::
 icon.svg::CompressedTexture2D::630099154259130867::1727813211::1727813294::1::::<><>::
 README.md::TextFile::-1::1727813211::0::1::::<><>::
@@ -50,10 +50,11 @@ torch.png::CompressedTexture2D::4972465331402609497::1727813211::1727813294::1::
 hud_heartEmpty.png::CompressedTexture2D::6797342193219230025::1727813211::1727813294::1::::<><>::
 hud_heartFull.png::CompressedTexture2D::1066522493294909637::1727813211::1727813294::1::::<><>::
 Kenney Thick.ttf::FontFile::5015992818255233894::1727813211::1727813294::1::::<><>::
-::res://Game Jam/::1727813349
-::res://Game Jam/Assets/::1727813349
-::res://Game Jam/Player/::1727813211
-player.tscn::PackedScene::7436887406465786051::1727813211::0::1::::<><>::uid://i8hv2alooy0r::::res://icon.svg
+::res://Game Jam/::1727813353
+::res://Game Jam/Assets/::1727813353
+::res://Game Jam/Assets/Player/::1727814193
+player.gd::GDScript::-1::1727814193::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7436887406465786051::1727814193::0::1::::<><>::res://Game Jam/Assets/Player/player.gd<>uid://i8hv2alooy0r::::res://icon.svg
 ::res://Marketing/::1727813294
 Logo.png::CompressedTexture2D::7061979605954411071::1727813211::1727813294::1::::<><>::
 ::res://Resources/::1727813211
