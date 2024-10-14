@@ -1,10 +1,11 @@
-[gd_scene load_steps=5 format=4 uid="uid://dnigisrnv4qa2"]
+[gd_scene load_steps=6 format=4 uid="uid://dnigisrnv4qa2"]
 
-[ext_resource type="Texture2D" uid="uid://cowsdnrvgkfje" path="res://Assets/Tiles/basic_tile_sheet.png" id="1_sgbco"]
-[ext_resource type="PackedScene" uid="uid://dd7qpjderptqp" path="res://Game Jam/Assets/Player/player.tscn" id="2_rboqw"]
+[ext_resource type="Texture2D" uid="uid://cowsdnrvgkfje" path="res://Assets/Tiles/basic_tile_sheet.png" id="1_2841u"]
+[ext_resource type="Script" path="res://Game Jam/Scenes/Levels/level.gd" id="1_fwl2u"]
+[ext_resource type="PackedScene" uid="uid://dd7qpjderptqp" path="res://Game Jam/Scenes/player.tscn" id="2_6fp4w"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_c3c5y"]
-texture = ExtResource("1_sgbco")
+texture = ExtResource("1_2841u")
 texture_region_size = Vector2i(70, 70)
 0:0/0 = 0
 1:0/0 = 0
@@ -886,10 +887,11 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_c3c5y")
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource("1_fwl2u")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_map_data = PackedByteArray("AAAAAAgAAAAAAAMAAAABAAgAAAAAAAMAAAACAAgAAAAAAAMAAAADAAgAAAAAAAMAAAAEAAgAAAAAAAMAAAAFAAgAAAAAAAMAAAAGAAgAAAAAAAMAAAAHAAgAAAAAAAMAAAAIAAgAAAAAAAMAAAAJAAgAAAAAAAMAAAAKAAgAAAAAAAMAAAALAAgAAAAAAAMAAAAMAAgAAAAAAAMAAAANAAgAAAAAAAMAAAAOAAgAAAAAAAMAAAAPAAgAAAAAAAMAAAA=")
 tile_set = SubResource("TileSet_6asfg")
 
-[node name="Player" parent="." instance=ExtResource("2_rboqw")]
+[node name="Player" parent="." instance=ExtResource("2_6fp4w")]
 position = Vector2(35, 525)

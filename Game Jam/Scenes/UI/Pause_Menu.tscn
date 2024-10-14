@@ -1,0 +1,30 @@
+[gd_scene load_steps=2 format=3 uid="uid://clat042r04pp7"]
+
+[ext_resource type="Script" path="res://Game Jam/Scripts/UI/pause_menu.gd" id="1_hn5ar"]
+
+[node name="Pause Menu" type="VBoxContainer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -48.0
+offset_right = 48.0
+offset_bottom = 645.0
+grow_horizontal = 2
+alignment = 1
+script = ExtResource("1_hn5ar")
+
+[node name="Resume" type="Button" parent="."]
+layout_mode = 2
+text = "Resume"
+
+[node name="Settings" type="Button" parent="."]
+layout_mode = 2
+text = "Settings"
+
+[node name="Main Menu" type="Button" parent="."]
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="Resume" to="." method="_on_resume_pressed"]
+[connection signal="pressed" from="Settings" to="." method="_on_settings_pressed"]
+[connection signal="pressed" from="Main Menu" to="." method="_on_main_menu_pressed"]

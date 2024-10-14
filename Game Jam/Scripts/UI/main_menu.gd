@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 
 
 func _on_play_pressed() -> void:
-	get_tree().change_scene_to_file("res://Game Jam/Assets/Level.tscn")
+	get_tree().change_scene_to_file("res://Game Jam/Scenes/Levels/Level.tscn")
 
 
 func _on_quit_pressed() -> void:

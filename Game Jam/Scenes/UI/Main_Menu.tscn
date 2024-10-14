@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://dykyjx0nyxbg7"]
 
-[ext_resource type="Script" path="res://Game Jam/Assets/main_menu.gd" id="1_4u25i"]
+[ext_resource type="Script" path="res://Game Jam/Scripts/UI/main_menu.gd" id="1_vsgf0"]
 
 [node name="Main Menu" type="VBoxContainer"]
 anchors_preset = 5
@@ -11,7 +11,7 @@ offset_right = 203.0
 offset_bottom = 646.0
 grow_horizontal = 2
 alignment = 1
-script = ExtResource("1_4u25i")
+script = ExtResource("1_vsgf0")
 
 [node name="Play" type="Button" parent="."]
 layout_mode = 2
