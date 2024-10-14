@@ -1,0 +1,25 @@
+[gd_scene load_steps=2 format=3 uid="uid://dykyjx0nyxbg7"]
+
+[ext_resource type="Script" path="res://Game Jam/Assets/main_menu.gd" id="1_4u25i"]
+
+[node name="Main Menu" type="VBoxContainer"]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -188.0
+offset_right = 203.0
+offset_bottom = 646.0
+grow_horizontal = 2
+alignment = 1
+script = ExtResource("1_4u25i")
+
+[node name="Play" type="Button" parent="."]
+layout_mode = 2
+text = "Play"
+
+[node name="Quit" type="Button" parent="."]
+layout_mode = 2
+text = "Quit"
+
+[connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
