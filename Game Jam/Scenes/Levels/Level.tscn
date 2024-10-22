@@ -887,6 +887,7 @@ physics_layer_0/collision_layer = 1
 sources/0 = SubResource("TileSetAtlasSource_c3c5y")
 
 [node name="Node2D" type="Node2D"]
+process_mode = 3
 script = ExtResource("1_fwl2u")
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]

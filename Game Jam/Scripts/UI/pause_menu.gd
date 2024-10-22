@@ -8,13 +8,10 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	if(Input.is_action_pressed("Pause")):
-		resume()
-
+	pass
 
 func _on_resume_pressed() -> void:
-	resume()
-
+	pass
 
 
 func _on_settings_pressed() -> void:
